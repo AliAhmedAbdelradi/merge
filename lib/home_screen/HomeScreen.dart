@@ -7,6 +7,8 @@ import 'package:tourism_app2/categories/cultural/cultural_categ.dart';
 import 'package:tourism_app2/categories/cultural/leisure_categ.dart';
 import 'package:tourism_app2/categories/cultural/Religious_categ.dart';
 import 'package:tourism_app2/categories/cultural/medical_categ.dart';
+import 'package:tourism_app2/favourte_screen/favourite_Screen.dart';
+import 'package:tourism_app2/search_screen/Search_Screen.dart';
 
 import '../edit_profile/Edit_profile.dart';
 
@@ -38,8 +40,8 @@ class _MyAppState extends State<HomeScreen> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Container(
-                  width: 128.0,
-                  height: 128.0,
+                  width: 128.0.w,
+                  height: 128.0.h,
                   margin:   EdgeInsets.only(
                     top: 24.0,
                     bottom: 64.0,
@@ -57,10 +59,10 @@ class _MyAppState extends State<HomeScreen> {
                         Image.asset(
                           'assets/images/Circle.png',
                         ),
-                        SizedBox(height: 3,),
+
                         Text(
                           "Ahmed",
-                          style: GoogleFonts.radioCanada(fontSize: 20,
+                          style: GoogleFonts.radioCanada(fontSize: 18,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)
                         ),
@@ -79,11 +81,16 @@ class _MyAppState extends State<HomeScreen> {
                 ListTile(
                   onTap: () {},
                   leading: const Icon(Icons.favorite),
-                  title:   Text(
-                    'Favourites',
-                    style: GoogleFonts.radioCanada(fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black),
+                  title:   InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, FavouriteScreen.routeName);
+                    },
+                    child: Text(
+                      'Favourites',
+                      style: GoogleFonts.radioCanada(fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
                   ),
                 ),
                 ListTile(
@@ -95,19 +102,7 @@ class _MyAppState extends State<HomeScreen> {
                       fontWeight: FontWeight.bold,
                       color: Colors.black)),
                 ),
-                const Spacer(),
-                DefaultTextStyle(
-                  style: const TextStyle(
-                    fontSize: 12,
-                    color: Colors.white54,
-                  ),
-                  child: Container(
-                    margin: const EdgeInsets.symmetric(
-                      vertical: 16.0,
-                    ),
-                    child: const Text('Terms of Service | Privacy Policy'),
-                  ),
-                ),
+
               ],
             ),
           ),
@@ -163,7 +158,11 @@ class _MyAppState extends State<HomeScreen> {
                 selectedColor: const Color(0xFF89C9FF),
               ),
               SalomonBottomBarItem(
-                icon: const Icon(Icons.search),
+                icon: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, SearchScreen.routeName);
+                  },
+                    child: const Icon(Icons.search)),
                 title:
                     const Text("Search", style: TextStyle(color: Colors.black)),
                 selectedColor: const Color(0xFF89C9FF),

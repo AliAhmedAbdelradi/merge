@@ -9,6 +9,7 @@ import 'package:tourism_app2/forget_password/first_screen/forget%20password.dart
 import 'package:tourism_app2/forget_password/second_screen/verify.dart';
 import 'package:tourism_app2/forget_password/third_screen/create_new_password.dart';
 import 'package:tourism_app2/login_screen/login.dart';
+import 'package:tourism_app2/search_screen/Search_Screen.dart';
 import 'package:tourism_app2/signup_screen/signup.dart';
 import 'package:tourism_app2/splash_screen/splash_screen.dart';
 import 'package:tourism_app2/welcomScreens/Welcom%20one.dart';
@@ -17,6 +18,7 @@ import 'package:tourism_app2/welcomScreens/Welcome3.dart';
 
 import 'categories/cultural/leisure_categ.dart';
 import 'categories/cultural/Religious_categ.dart';
+import 'favourte_screen/favourite_Screen.dart';
 
 
 
@@ -54,6 +56,8 @@ class MyApp extends StatelessWidget {
           CulturalCateg.routeName: (context) => CulturalCateg(),
           LeisureCateg.routeName: (context) => LeisureCateg(),
           ReligiousCateg.routeName: (context) => ReligiousCateg(),
+          SearchScreen.routeName: (context) => SearchScreen(),
+          FavouriteScreen.routeName: (context) => FavouriteScreen(),
         },
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
