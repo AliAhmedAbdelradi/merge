@@ -22,7 +22,7 @@ class SearchScreen extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                 child: TextFormField(
                   obscureText: false,
-                  decoration: const InputDecoration(
+                  decoration:   InputDecoration(
                       filled: true,
                       fillColor: Colors.white,
                       enabledBorder: OutlineInputBorder(
@@ -45,7 +45,7 @@ class SearchScreen extends StatelessWidget {
                           borderRadius:
                           BorderRadius.all(Radius.circular(50))),
                       hintStyle:
-                      TextStyle(height: 2.8,fontSize: 16, color: Colors.black26),
+                      TextStyle(height: 2.8.h,fontSize: 16, color: Colors.black26),
                       hintText: "Search"),
                 ),
               ),
@@ -57,7 +57,7 @@ class SearchScreen extends StatelessWidget {
                 },
 
                 child: Icon(Icons.arrow_back, color: Colors.black87, size: 25)),
-            leadingWidth: 3,
+            leadingWidth: 10.w  ,
             backgroundColor: Colors.transparent,
             elevation: 0.0,
             actions: [
@@ -127,7 +127,7 @@ class SearchScreen extends StatelessWidget {
                 Row(
                   children: [
                     Container(
-                      margin:EdgeInsets.only(left: 30.w),
+                      margin:EdgeInsets.only(left: 30),
                       child: Text(
                         "in Cairo Egypt At 187 m (614 ft), it was the tallest  ",
                         style: TextStyle(fontSize: 14),),

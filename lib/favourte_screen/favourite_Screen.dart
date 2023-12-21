@@ -23,12 +23,12 @@ class _favouriteScreenState extends State<FavouriteScreen> {
           backgroundColor: Colors.white,
           appBar: AppBar(
             elevation: 0.0,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.transparent,
             leading: InkWell( onTap: () {
               Navigator.pop(context);
             },
                 child: const Icon(Icons.arrow_back, color: Colors.black87, size: 30)),
-            leadingWidth: 30,
+            leadingWidth: 30.w,
             actions: [const Image(image: AssetImage("assets/images/new_logo.png"))],
           ),
           body: Padding(
@@ -41,7 +41,7 @@ class _favouriteScreenState extends State<FavouriteScreen> {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Container(
-                          margin: const EdgeInsets.only(left: 20),
+                          margin: const EdgeInsets.only(left: 2),
                           child:  Column(
                             children: [
                               Text(
