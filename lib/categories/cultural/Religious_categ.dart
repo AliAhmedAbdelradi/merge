@@ -4,10 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../../Forget_password/constants/image_categ.dart';
 
-class LeligiousCateg extends StatelessWidget {
+class ReligiousCateg extends StatelessWidget {
   static const String routeName = "leligious";
 
-  const LeligiousCateg({super.key});
+  const ReligiousCateg({super.key});
+
+
 
   @override
   Widget build(BuildContext context) {

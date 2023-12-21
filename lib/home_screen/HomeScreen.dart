@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:tourism_app2/categories/cultural/cultural_categ.dart';
 import 'package:tourism_app2/categories/cultural/leisure_categ.dart';
-import 'package:tourism_app2/categories/cultural/leligious_categ.dart';
+import 'package:tourism_app2/categories/cultural/Religious_categ.dart';
 import 'package:tourism_app2/categories/cultural/medical_categ.dart';
 
 import '../edit_profile/Edit_profile.dart';
@@ -231,7 +231,7 @@ class _MyAppState extends State<HomeScreen> {
                   Expanded(
                     child: InkWell(
                       onTap: () {
-                        Navigator.pushNamed(context, LeligiousCateg.routeName);
+                        Navigator.pushNamed(context, ReligiousCateg.routeName);
                       },
                       child: const Image(
                           image: AssetImage("assets/images/Religion.png")),

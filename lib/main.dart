@@ -16,7 +16,7 @@ import 'package:tourism_app2/welcomScreens/Welcome%20two.dart';
 import 'package:tourism_app2/welcomScreens/Welcome3.dart';
 
 import 'categories/cultural/leisure_categ.dart';
-import 'categories/cultural/leligious_categ.dart';
+import 'categories/cultural/Religious_categ.dart';
 
 
 
@@ -53,7 +53,7 @@ class MyApp extends StatelessWidget {
           MedicalCateg.routeName: (context) => MedicalCateg(),
           CulturalCateg.routeName: (context) => CulturalCateg(),
           LeisureCateg.routeName: (context) => LeisureCateg(),
-          LeligiousCateg.routeName: (context) => LeligiousCateg(),
+          ReligiousCateg.routeName: (context) => ReligiousCateg(),
         },
         theme: ThemeData(
           appBarTheme: const AppBarTheme(
