@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tourism_app2/edit_profile/Edit_profile.dart';
+import 'package:tourism_app2/favourite_Screen/favourite_Screen.dart';
 import 'package:tourism_app2/home_screen/HomeScreen.dart';
 import 'package:tourism_app2/forget_password/first_screen/forget%20password.dart';
 import 'package:tourism_app2/forget_password/second_screen/verify.dart';
 import 'package:tourism_app2/forget_password/third_screen/create_new_password.dart';
 import 'package:tourism_app2/login_screen/login.dart';
+import 'package:tourism_app2/search_Screen/Search_Screen.dart';
 import 'package:tourism_app2/signup_screen/signup.dart';
 import 'package:tourism_app2/splash_screen/splash_screen.dart';
 import 'package:tourism_app2/welcomScreens/Welcom%20one.dart';
@@ -37,6 +39,9 @@ class MyApp extends StatelessWidget {
         Welcome3splash.routeName: (context) => Welcome3splash(),
         HomeScreen.routeName: (context) => HomeScreen(),
         Edit_profile.routeName: (context) => Edit_profile(),
+        SearchScreen.routeName: (context) => SearchScreen(),
+        FavouriteScreen.routeName: (context) => FavouriteScreen(),
+
       },
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
