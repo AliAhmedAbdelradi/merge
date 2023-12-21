@@ -26,12 +26,33 @@ class Welcome3splash extends StatelessWidget {
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 20, top: 50),
-                    child: Text(
-                      "Explore Egypt's Rich Heritagehistory and culturehistorical sitesmuseumsand landmarks.",
-                      style: TextStyle(
-                          color: Colors.black87,
-                          fontSize: 23,
-                          fontWeight: FontWeight.bold),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "Explore Egypt's Rich Heritage ",
+                          style: TextStyle(
+                              color: Colors.black87,
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Text("history and culture",style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal)),
+                        Text(" historical sites  ",style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal)),
+                        Text("museums",style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal)),
+                        Text("and land marks.",style: TextStyle(
+                            color: Colors.black87,
+                            fontSize: 20,
+                            fontWeight: FontWeight.normal)),
+                      ],
                     ),
                   ),
                   SizedBox(height: 30,),

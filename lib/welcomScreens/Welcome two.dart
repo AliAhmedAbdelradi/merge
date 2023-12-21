@@ -21,7 +21,7 @@ class Welcome2Splash extends StatelessWidget {
 
                     Container(
                       height: 250,
-                      margin: EdgeInsets.only(left: 15,top: 50),
+                      margin: EdgeInsets.only(left: 10,top: 50),
                       child: Row(
                         children: [
                           Expanded(
@@ -35,7 +35,7 @@ class Welcome2Splash extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(left: 20, top: 120),
+                      margin: EdgeInsets.only(left: 4, top: 120),
                       child: Text(textAlign: TextAlign.center,
                         "You Can Request a Driver To Take You From Airport To Your Tourist Destination to Discover the Land Marks of Egypt",
                         style: TextStyle(

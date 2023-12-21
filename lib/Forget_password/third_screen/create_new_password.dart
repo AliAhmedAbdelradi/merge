@@ -28,8 +28,7 @@ class _CreateNewPassState extends State<CreateNewPass> {
           actions:   [
             Image(
               image: AssetImage("assets/images/new_logo.png"),
-              height: 40.w,
-              width: 40.h,
+                height: 40.h,width: 40.w
             )
           ],
           leading: IconButtonLeading(() {
@@ -41,7 +40,7 @@ class _CreateNewPassState extends State<CreateNewPass> {
                 color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold),
           )),
       body: Padding(
-        padding: const EdgeInsets.all(60),
+        padding: const EdgeInsets.all(50),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -152,12 +151,15 @@ class _CreateNewPassState extends State<CreateNewPass> {
                     thickness: 8,
                     color: Color(0xFF89C9FF),
                     height: 8.h,
+                         indent:15  ,
                   )),
                   Expanded(
                       child: Divider(
                     thickness: 8,
                     color: Color(0xFF89C9FF),
                     height: 8.h,
+
+                        endIndent: 15,
                   ))
                 ],
               ),

@@ -16,7 +16,7 @@ class Verify extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar( actions: [
-        Image(image: AssetImage("assets/images/new_logo.png"), height: 40,width: 40,)
+        Image(image: AssetImage("assets/images/new_logo.png"), height: 40.h,width: 40.w ,)
       ],
 
             leading: IconButtonLeading(() {

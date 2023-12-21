@@ -9,7 +9,7 @@ class BtnVerify extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      width: double.infinity,
+      width: 225,
       child: ElevatedButton(
           onPressed: () {
             Verify();

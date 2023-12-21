@@ -12,11 +12,11 @@ class ImageCateg extends StatelessWidget {
       children: [
         Container(
           width: 140.w,
-            height: 139.h,
+            height: 137.h,
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
             child: Expanded(child: Image(image: AssetImage(image)))),
 
-        Container(child: Expanded(child: Text(txt,style: TextStyle(fontSize: 15),))),
+        Container(child: Expanded(child: Text(txt,style: TextStyle(fontSize: 16),))),
 
       ],
     );
