@@ -81,7 +81,7 @@ class CulturalCateg extends StatelessWidget {
               children: <Widget>[
                 ImageCateg("assets/images/Aswan.png","Aswan" ),
                 ImageCateg("assets/images/Giza.png","Giza" ),
-                ImageCateg("assets/images/Rectangle 3.png","Luxor" ),
+                ImageCateg("assets/images/R1.png","Luxor" ),
                 ImageCateg("assets/images/Rectangle 6.png","Qena"),
                 ImageCateg("assets/images/Rectangle 4.png","Cairo"),
                 ImageCateg("assets/images/Rectangle 7.png","Sohag"),
