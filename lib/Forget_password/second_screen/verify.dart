@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../constants/IconButtonLeading.dart';
@@ -15,7 +16,7 @@ class Verify extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar( actions: [
-        Image(image: AssetImage("assets/images/logo.png"), height: 40,width: 40,)
+        Image(image: AssetImage("assets/images/new_logo.png"), height: 40,width: 40,)
       ],
 
             leading: IconButtonLeading(() {
@@ -43,7 +44,7 @@ class Verify extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 5,
+                height: 5.h,
               ),
               Center(
                 child: Row(
@@ -59,28 +60,28 @@ class Verify extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 50,
+                height: 50.h,
               ),
               Row(
                 children: [
                   CodeMassege(),
                   SizedBox(
-                    width: 6.5,
+                    width: 6.5.w,
                   ),
                   CodeMassege(),
                   SizedBox(
-                    width: 6.5,
+                    width: 6.5.w,
                   ),
                   CodeMassege(),
                   SizedBox(
-                    width: 7,
+                    width: 7.w,
                   ),
                   CodeMassege(),
                 ],
               ),
 
               SizedBox(
-                height: 50,
+                height: 50.h,
               ),
               Text(
                 "Didn’t Receive the Code ?",
@@ -90,7 +91,7 @@ class Verify extends StatelessWidget {
                     fontSize: 15),
               ),
               SizedBox(
-                height: 6,
+                height: 6.h,
               ),
               Text(
                 "Resend Code",
@@ -100,7 +101,7 @@ class Verify extends StatelessWidget {
                     fontSize: 15),
               ),
               SizedBox(
-                height: 40,
+                height: 40.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -108,15 +109,15 @@ class Verify extends StatelessWidget {
                   Text("1 of 2",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold),),
                 ],
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 15.h,),
               Row(
                 children: [
-                  Expanded(child: Divider(thickness: 8,color: Color(0xFF000000),height: 8, )),
+                  Expanded(child: Divider(thickness: 8,color: Color(0xFFF89C9FF),height: 8, )),
                   Expanded(child: Divider(thickness: 8,height: 8 ,))
                 ],
 
               ),
-              SizedBox(height: 20,),
+              SizedBox(height: 20.h,),
               BtnVerify((){
               Navigator.pushNamed(context, CreateNewPass.routeName);
 

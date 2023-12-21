@@ -1,6 +1,7 @@
 
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 
 import '../constants/IconButtonLeading.dart';
@@ -24,11 +25,11 @@ class _CreateNewPassState extends State<CreateNewPass> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-          actions: const [
+          actions:   [
             Image(
-              image: AssetImage("assets/images/logo.png"),
-              height: 40,
-              width: 40,
+              image: AssetImage("assets/images/new_logo.png"),
+              height: 40.w,
+              width: 40.h,
             )
           ],
           leading: IconButtonLeading(() {
@@ -53,17 +54,17 @@ class _CreateNewPassState extends State<CreateNewPass> {
                       fontSize: 25),
                 ),
               ),
-              const SizedBox(
-                height: 5,
+                SizedBox(
+                height: 5.h,
               ),
-              const SizedBox(
-                height: 30,
+                SizedBox(
+                height: 30.h,
               ),
               Column(
                 children: [
                   Container(
-                    width: 312,
-                    height: 55,
+                    width: 312.w,
+                    height: 55.h,
                     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                     child: TextFormField(
                       obscureText: true,
@@ -95,8 +96,8 @@ class _CreateNewPassState extends State<CreateNewPass> {
                     ),
                   ),
                   Container(
-                    width: 312,
-                    height: 55,
+                    width: 312.w,
+                    height: 55.h,
                     padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                     child: TextFormField(
                       obscureText: true,
@@ -129,8 +130,8 @@ class _CreateNewPassState extends State<CreateNewPass> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 50,
+                SizedBox(
+                height: 50.h,
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -141,27 +142,27 @@ class _CreateNewPassState extends State<CreateNewPass> {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 15,
+                SizedBox(
+                height: 15.h,
               ),
-              const Row(
+                Row(
                 children: [
                   Expanded(
                       child: Divider(
                     thickness: 8,
                     color: Color(0xFF89C9FF),
-                    height: 8,
+                    height: 8.h,
                   )),
                   Expanded(
                       child: Divider(
                     thickness: 8,
                     color: Color(0xFF89C9FF),
-                    height: 8,
+                    height: 8.h,
                   ))
                 ],
               ),
-              const SizedBox(
-                height: 20,
+                SizedBox(
+                height: 20.h,
               ),
 
               BtnVerify(

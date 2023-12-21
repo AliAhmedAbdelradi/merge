@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+import 'package:tourism_app2/categories/cultural/cultural_categ.dart';
+import 'package:tourism_app2/categories/cultural/leisure_categ.dart';
+import 'package:tourism_app2/categories/cultural/leligious_categ.dart';
+import 'package:tourism_app2/categories/cultural/medical_categ.dart';
 
 import '../edit_profile/Edit_profile.dart';
 
@@ -19,19 +24,19 @@ class _MyAppState extends State<HomeScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        drawer: const Drawer(elevation: 0.0, width: 27),
+        drawer: Drawer(elevation: 0.0, width: 27.w),
         appBar: AppBar(
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(50),
                     bottomLeft: Radius.circular(50))),
             backgroundColor: const Color(0xff89C9FF),
-            toolbarHeight: 97,
+            toolbarHeight: 97.h,
             centerTitle: true,
             title: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Center(child: Image(image: AssetImage("assets/images/logo.png"))),
+                Center(child: Image(image: AssetImage("assets/images/new_logo.png"),width: 65,height: 65,)),
 
               ],
             ),
@@ -88,9 +93,13 @@ class _MyAppState extends State<HomeScreen> {
                       fontStyle: FontStyle.normal,
                       fontWeight: FontWeight.bold)),
                   const SizedBox(height: 10,),
-                  const Image(image: AssetImage("assets/images/pyramids.png")),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, CulturalCateg.routeName);
+                    },
+                      child: const Image(image: AssetImage("assets/images/pyramids.png"))),
               Container(
-                width: 90,
+                width: 90.w,
                 child: const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -104,29 +113,37 @@ class _MyAppState extends State<HomeScreen> {
                 ),
               ),
                     SizedBox(
-                    height: 7,
+                    height: 7.h,
                   ),
-              const Row(
+                Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Expanded(
-                    child:Image(
-                        image: AssetImage(
-                            "assets/images/Leisure.png")),
+                    child:InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, LeisureCateg.routeName);
+                      },
+                      child: Image(
+                          image: AssetImage(
+                              "assets/images/Leisure.png")),
+                    ),
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 10.w,
                   ),
                   Expanded(
-                    child: Expanded(
-                        child:Image(
+                      child:InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, LeligiousCateg.routeName);
+                        },
+                        child: Image(
                             image: AssetImage(
                                 "assets/images/Religion.png")),
-                  ),
+                      ),
                   )],
               ),
-              const SizedBox(
-                height: 7,
+                SizedBox(
+                height: 7.h,
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -147,11 +164,16 @@ class _MyAppState extends State<HomeScreen> {
                   ),
                 ],
               ),
-                  const SizedBox(
-                    height: 7,
+                    SizedBox(
+                    height: 7.h,
                   ),
-              const Center(child: Image(image: AssetImage("assets/images/Medical.png"))),
-              const SizedBox(height: 7,),
+                Center(child: InkWell(
+
+                  onTap: () {
+                    Navigator.pushNamed(context, MedicalCateg.routeName);
+                  },
+                  child: Image(image: AssetImage("assets/images/Medical.png")))),
+                SizedBox(height: 7.h,),
               const Text("Medical",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
             ]),
           ),

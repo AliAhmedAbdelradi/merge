@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CodeMassege extends StatelessWidget {
   const CodeMassege({super.key});
@@ -6,6 +7,7 @@ class CodeMassege extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: EdgeInsets.only(left: 10),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.black26),
           borderRadius: BorderRadius.circular(10)),
@@ -19,8 +21,8 @@ class CodeMassege extends StatelessWidget {
         style: TextStyle(fontSize: 30),
         maxLength: 1,
       ),
-      width: 55,
-      height: 55,
+      width: 55.w,
+      height: 55.h,
 
     );
   }

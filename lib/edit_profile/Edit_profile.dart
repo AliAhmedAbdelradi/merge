@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../home_screen/HomeScreen.dart';
 
@@ -26,7 +27,7 @@ class Edit_profile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
 
-                    const Image(image: AssetImage("assets/images/logo.png"),),
+                      Image(image: AssetImage("assets/images/new_logo.png"),width: 65.w,height: 65.h,),
                   ],
                 )),
             Container(
@@ -46,13 +47,13 @@ class Edit_profile extends StatelessWidget {
       ),
         body: Container(
       child: Padding(
-        padding: const EdgeInsets.all(30.0),
+        padding:   EdgeInsets.all(30.0),
         child: SingleChildScrollView(
           child: Column(
             children: [
 
-              const SizedBox(
-                height: 13,
+                SizedBox(
+                height: 13.h,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -64,8 +65,8 @@ class Edit_profile extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 13,
+                SizedBox(
+                height: 13.h,
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -79,8 +80,8 @@ class Edit_profile extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 10,
+                SizedBox(
+                height: 10.h,
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -94,8 +95,8 @@ class Edit_profile extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(
-                height: 50,
+                SizedBox(
+                height: 50.h,
               ),
               const Row(
                 children: [
@@ -120,8 +121,8 @@ class Edit_profile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         borderSide: const BorderSide(color: Colors.transparent))),
               ),
-              const SizedBox(
-                height: 25,
+                SizedBox(
+                height: 25.h,
               ),
               const Row(
                 children: [
@@ -146,8 +147,8 @@ class Edit_profile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         borderSide: const BorderSide(color: Colors.transparent))),
               ),
-              const SizedBox(
-                height: 25,
+                SizedBox(
+                height: 25.h,
               ),
               const Row(
                 children: [
@@ -172,8 +173,8 @@ class Edit_profile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(20),
                         borderSide: const BorderSide(color: Colors.transparent))),
               ),
-              const SizedBox(
-                height: 25,
+                SizedBox(
+                height: 25.h,
               ),
               const Row(
                 children: [

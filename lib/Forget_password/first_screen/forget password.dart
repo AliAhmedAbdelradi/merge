@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../constants/Btn_next.dart';
 import '../constants/IconButtonLeading.dart';
@@ -13,7 +14,7 @@ class ForgetPassword extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Image(image: AssetImage("assets/images/logo.png"), height: 40,width: 40,)
+          Image(image: AssetImage("assets/images/new_logo.png"), height: 40,width: 40,)
 
         ],
          leading: IconButtonLeading(() {
@@ -36,16 +37,16 @@ class ForgetPassword extends StatelessWidget {
                       fontSize: 28),
                 ),
               ),
-              const SizedBox(
-                height: 10,
+                SizedBox(
+                height: 10.h,
               ),
-              const Image(
+                Image(
                 image: AssetImage("assets/images/Picture.png"),
-                width: 180,
-                height: 241,
+                width: 180.w,
+                height: 241.h,
               ),
-              const SizedBox(
-                height: 10,
+                  SizedBox(
+                height: 10.h,
               ),
               const Center(
                 child: Column(
@@ -67,16 +68,16 @@ class ForgetPassword extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 35,
+                SizedBox(
+                height: 35.h,
               ),
                MessageShape(txt: "via SMS", icon: Icons.message, txt2: "+1 123********99"),
-              const SizedBox(
-                height: 10,
+                SizedBox(
+                height: 10.h,
               ),
              MessageShape(txt: "via Email", icon: Icons.mail, txt2: "lauran****@email.com9"),
 
-              const SizedBox(height: 20,),
+                SizedBox(height: 20.h,),
               BtnNExt((){
                 Navigator.pushNamed(context, Verify.routeName);
 

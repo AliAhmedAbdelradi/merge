@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:tourism_app2/login_screen/login.dart';
 
@@ -10,49 +9,95 @@ class Welcome3splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        margin: EdgeInsets.only(top: 30),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
+      body: Column(
+        children: [
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(left: 40, bottom: 35),
+                    child: Row(
+                      children: [
+                        Image(image: AssetImage("assets/images/Welcome3.png")),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 20, top: 50),
+                    child: Text(
+                      "Explore Egypt's Rich Heritagehistory and culturehistorical sitesmuseumsand landmarks.",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontSize: 23,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  SizedBox(height: 30,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamedAndRemoveUntil(
+                              context,
+                              LoginScreen.routeName,
+                              (route) => false,
+                            );
+                          },
+                          style: ButtonStyle(
+                              shape: MaterialStatePropertyAll(
+                                  RoundedRectangleBorder(
+                                      borderRadius:
+                                      BorderRadius.circular(30)))),
 
-              Container(
-                margin: EdgeInsets.only(left: 40, bottom: 35),
-                child: Row(
-                  children: [
-                    Image(image: AssetImage("assets/images/Welcome3.png")),
-                  ],
-                ),
+                          child: Text(
+                            "Create Account",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold),
+                          )),
+                    ],
+                  )
+                ],
               ),
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
               Container(
-                margin: EdgeInsets.only(left: 20, top: 50),
-                child: Text(
-                  "Explore Egypt's Rich Heritagehistory and culturehistorical sitesmuseumsand landmarks.",
-                  style: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 23,
-                      fontWeight: FontWeight.bold),
-                ),
+                width: 35,
+                height: 12,
+                decoration: BoxDecoration(
+                    color:Colors.grey,
+                    borderRadius: BorderRadius.circular(20)),
               ),
+              SizedBox(width: 5,),
               Container(
-                  margin: EdgeInsets.only(left: 200, top: 100),
-                  decoration: BoxDecoration(
-                      color: Color(0xff68b0f5),
-                      borderRadius: BorderRadius.circular(10)),
-                  child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.pushNamedAndRemoveUntil(context, LoginScreen.routeName,(route) => false,);
-                      },
-                      child: Text(
-                        "Let's Go start",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold),
-                      )))
+                width: 35,
+                height: 12,
+                decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(20)),
+              ),
+              SizedBox(width: 5,),
+              Container(
+                width: 60,
+                height: 12,
+                decoration: BoxDecoration(
+                    color: Color(0xFF89C9FF),
+                    borderRadius: BorderRadius.circular(20)),
+              )
             ],
           ),
-        ),
+        ],
       ),
     );
   }

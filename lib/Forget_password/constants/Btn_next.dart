@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class BtnNExt extends StatelessWidget {
 
@@ -9,8 +10,8 @@ class BtnNExt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 250,
-      height: 40,
+      width: 250.w,
+      height: 40.h,
       child: ElevatedButton(
           onPressed: () {
             Next();

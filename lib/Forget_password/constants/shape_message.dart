@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MessageShape extends StatelessWidget {
    MessageShape({super.key,  required this.txt, required this.icon, required this.txt2});
@@ -9,8 +10,8 @@ class MessageShape extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-      width: 250,
-      height: 78,
+      width: 290.w,
+      height: 78.h,
       decoration: BoxDecoration(
           border: Border.all(color: Color(0xFF89C9FF),width: 3),
           borderRadius: BorderRadius.circular(22),
@@ -22,26 +23,26 @@ class MessageShape extends StatelessWidget {
           children: [
             Container(
 
-                margin: EdgeInsets.only(bottom: 10,left: 5),
+                margin: EdgeInsets.only(bottom: 5,left: 0),
                 child: Icon(
                   icon ,
                   color: Colors.black,
                   size: 20,
                 )),
             SizedBox(
-              width: 50,
+              width: 50.w,
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    margin: EdgeInsets.only(bottom: 15,right:2.5),
+                    margin: EdgeInsets.only(bottom: 10,right:2.5),
                     child: Text(
                       txt,
                       style: TextStyle(fontSize: 15,color: Color(0xFF868686)),
                     )),
                 Container(
-                    margin: EdgeInsets.only(bottom: 10,right:0),
+                    margin: EdgeInsets.only(bottom: 5,right:0),
                     child: Text(txt2,style: TextStyle(fontSize: 15) ,)),
               ],
             ),
