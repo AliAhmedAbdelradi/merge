@@ -29,7 +29,7 @@ class Verify extends StatelessWidget {
                 color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold),
           )),
       body:  Padding(
-        padding: EdgeInsets.all(48),
+        padding: EdgeInsets.all(44),
         child: SingleChildScrollView(
           child: Column(
             children: [

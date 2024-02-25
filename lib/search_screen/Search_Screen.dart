@@ -50,28 +50,22 @@ class SearchScreen extends StatelessWidget {
                 ),
               ),
             ),
-            leading: InkWell(
-                onTap: () {
 
-                  Navigator.pop(context);
-                },
-
-                child: Icon(Icons.arrow_back, color: Colors.black87, size: 25)),
-            leadingWidth: 10.w  ,
+            leadingWidth: 0.w  ,
             backgroundColor: Colors.transparent,
             elevation: 0.0,
             actions: [
               IconButton(
                   onPressed: () {},
                   icon: Icon(
-                    Icons.filter_alt,
+                    Icons.filter_list,
                     color: Colors.black,
                   )),
               Image(image: AssetImage("assets/images/new_logo.png")),
             ],
           ),
           body: Card(
-             shape: OutlineInputBorder(borderSide: BorderSide(width: 3,color: Color(0xff89C9FF)),borderRadius: BorderRadius.circular(20)),
+             shape: OutlineInputBorder(borderSide: BorderSide(width: 2,color: Colors.transparent),borderRadius: BorderRadius.circular(20)),
             child: Column(
                mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -89,7 +83,7 @@ class SearchScreen extends StatelessWidget {
                         child: Icon(
                           Icons.favorite,
                           size: 30,
-                          color: Colors.red,
+                          color: Colors.white,
                         ))
                   ],
                 ),

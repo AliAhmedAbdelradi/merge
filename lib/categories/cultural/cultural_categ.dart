@@ -19,7 +19,7 @@ class CulturalCateg extends StatelessWidget {
             Navigator.pop(context);
 
           },
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
             size: 30,
           ),
@@ -27,7 +27,7 @@ class CulturalCateg extends StatelessWidget {
         ),
         actions: [
           Image(
-            image: AssetImage("assets/images/new_logo.png"),
+            image: const AssetImage("assets/images/new_logo.png"),
             width: 60.w ,
             height: 55.h,
           )
@@ -47,20 +47,20 @@ class CulturalCateg extends StatelessWidget {
             padding: const EdgeInsets.all(10),
             child: TextFormField(
 
-              obscureText: true,
+
               decoration:   InputDecoration(
                   fillColor: Colors.white,
                   filled: true,
-                  enabledBorder: OutlineInputBorder(
+                  enabledBorder: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                       borderSide: BorderSide(color: Colors.black26)),
-                  focusedBorder: OutlineInputBorder(
+                  focusedBorder: const OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(50)),
                       borderSide: BorderSide(color: Colors.black26)),
-                  border: OutlineInputBorder(
+                  border: const OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(50)),
                   ),
-                  prefixIcon: Icon(
+                  prefixIcon: const Icon(
                     Icons.search,
                     size: 20,
                   ),
@@ -69,6 +69,7 @@ class CulturalCateg extends StatelessWidget {
                   hintText: "City"),
             ),
           ),
+
 
           Expanded(
             child: GridView.count(

@@ -74,7 +74,7 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         hintStyle:
                         TextStyle(height: 3.5,fontSize: 16, color: Colors.black26),
-                        hintText: "Name"),
+                        hintText: "user name"),
                   ),
                 ),
                 Container(

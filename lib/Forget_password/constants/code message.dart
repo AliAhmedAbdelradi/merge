@@ -7,7 +7,7 @@ class CodeMassege extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 10),
+      margin: EdgeInsets.only(left: 9),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.black26),
           borderRadius: BorderRadius.circular(10)),

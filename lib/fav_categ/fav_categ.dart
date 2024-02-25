@@ -13,11 +13,11 @@ class FavCateg extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 356.w,
-      height: 115.h,
+      height: 116.h,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(20),
-              topRight: Radius.circular(20)),
+              bottomLeft:  Radius.circular(20),
+              bottomRight: Radius.circular(20)),
           color: Colors.white,
           border: Border.all(
             color: Colors.black,
@@ -25,10 +25,10 @@ class FavCateg extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(left: 10),
+            margin: EdgeInsets.only(left: 10.w),
             child: Row(children: [
               Container(
-                margin: EdgeInsets.only(left: 10),
+                margin: EdgeInsets.only(left: 10.w),
                 child: Column(
                   children: [
                     Text(

@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                 Container(
                     margin: const EdgeInsets.only(left: 10, top: 10),
                     child: const Text(
-                      "Email",
+                      "user name",
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 20,

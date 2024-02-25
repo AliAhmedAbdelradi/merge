@@ -71,13 +71,13 @@ class ForgetPassword extends StatelessWidget {
                 SizedBox(
                 height: 35.h,
               ),
-               MessageShape(txt: "via SMS", icon: Icons.message, txt2: "+1 123********99"),
+
                 SizedBox(
-                height: 10.h,
+                height: 30.h,
               ),
              MessageShape(txt: "via Email", icon: Icons.mail, txt2: "lauran****@email.com9"),
 
-                SizedBox(height: 20.h,),
+                SizedBox(height: 80.h,),
               BtnNExt((){
                 Navigator.pushNamed(context, Verify.routeName);
 

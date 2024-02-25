@@ -8,6 +8,7 @@ import 'package:tourism_app2/categories/cultural/leisure_categ.dart';
 import 'package:tourism_app2/categories/cultural/Religious_categ.dart';
 import 'package:tourism_app2/categories/cultural/medical_categ.dart';
 import 'package:tourism_app2/favourte_screen/favourite_Screen.dart';
+import 'package:tourism_app2/plan_type_screen/plan_type.dart';
 import 'package:tourism_app2/search_screen/Search_Screen.dart';
 
 import '../edit_profile/Edit_profile.dart';
@@ -49,6 +50,7 @@ class _MyAppState extends State<HomeScreen> {
                   clipBehavior: Clip.antiAlias,
                   decoration:   BoxDecoration(
                     shape: BoxShape.circle,
+
                   ),
                   child: InkWell(
                     onTap: () {
@@ -57,12 +59,13 @@ class _MyAppState extends State<HomeScreen> {
                     child: Column(
                       children: [
                         Image.asset(
-                          'assets/images/Circle.png',
+                          'assets/images/Circle.png',height: 80,
+
                         ),
 
                         Text(
-                          "Ahmed",
-                          style: GoogleFonts.radioCanada(fontSize: 18,
+                          "user name",
+                          style: GoogleFonts.radioCanada(fontSize: 15,
                               fontWeight: FontWeight.bold,
                               color: Colors.black)
                         ),
@@ -72,15 +75,28 @@ class _MyAppState extends State<HomeScreen> {
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: const Icon(Icons.airplanemode_active_sharp),
-                  title:   Text('Trip Plans',
-                      style: GoogleFonts.radioCanada(fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black)),
+                  leading: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, PlanType.routeName);
+                      },
+                      child: const Icon(Icons.airplanemode_active_sharp)),
+                  title:   InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, PlanType.routeName);
+                    },
+                    child: Text('Trip Plans',
+                        style: GoogleFonts.radioCanada(fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black)),
+                  ),
                 ),
                 ListTile(
                   onTap: () {},
-                  leading: const Icon(Icons.favorite),
+                  leading: InkWell(
+                      onTap: () {
+                        Navigator.pushNamed(context, FavouriteScreen.routeName);
+                      },
+                      child: const Icon(Icons.favorite)),
                   title:   InkWell(
                     onTap: () {
                       Navigator.pushNamed(context, FavouriteScreen.routeName);
@@ -109,9 +125,13 @@ class _MyAppState extends State<HomeScreen> {
         ),
       ),
       child: Scaffold(
-        drawer:Drawer(width: 0,),
+        
         backgroundColor: Colors.white,
         appBar: AppBar(
+          leading: IconButton(onPressed: (){
+
+
+          }, icon: Icon(Icons.inbox)),
 
             shape: const RoundedRectangleBorder(
                 borderRadius: BorderRadius.only(
@@ -185,7 +205,7 @@ class _MyAppState extends State<HomeScreen> {
             padding: const EdgeInsets.all(30),
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-              const Text("Find your favourite Trip",
+              const Text("Find Your category",
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: 22,

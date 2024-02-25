@@ -21,7 +21,6 @@ class Edit_profile extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox.shrink(),
-
               InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, HomeScreen.routeName);
@@ -33,13 +32,12 @@ class Edit_profile extends StatelessWidget {
                         margin: EdgeInsets.only(right: 20),
                         child: Image(
                           image: AssetImage("assets/images/new_logo.png"),
-                          width: 65.w,
-                          height: 65.h,
+                          width: 76.w,
+                          height: 114.h,
                         ),
                       ),
                     ],
                   )),
-
               Container(
                 child: const Text(
                   "Done",
@@ -69,6 +67,7 @@ class Edit_profile extends StatelessWidget {
                           backgroundImage:
                               AssetImage("assets/images/Circle.png"),
                           maxRadius: 50,
+                          backgroundColor: Colors.transparent,
                         ),
                       )
                     ],
@@ -80,7 +79,7 @@ class Edit_profile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Ahmed",
+                        "user name",
                         style: TextStyle(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
@@ -106,130 +105,139 @@ class Edit_profile extends StatelessWidget {
                   SizedBox(
                     height: 50.h,
                   ),
-                  const Row(
-                    children: [
-                      Text(
-                        "First name",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black87),
-                      )
-                    ],
-                  ),
-                  TextField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderSide:
-                                const BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        fillColor: const Color(0x8086BFF6),
-                        filled: true,
-                        hintText: "Ahmed",
-                        hintStyle: TextStyle(color: Colors.black26,fontWeight: FontWeight.bold),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25),
-                            borderSide:
-                                const BorderSide(color: Colors.black26))),
+                  Container(
+                    width: 330,
+                    height: 48,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          fillColor: const Color(0x8086BFF6),
+                          suffixIcon: Icon(Icons.done,size: 18),
+                          filled: true,
+                          hintText: "First name",
+                          hintStyle: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              borderSide:
+                                  const BorderSide(color: Colors.black26))),
+                    ),
                   ),
                   SizedBox(
                     height: 25.h,
                   ),
-                  const Row(
-                    children: [
-                      Text(
-                        "last name",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black87),
-                      )
-                    ],
-                  ),
-                  TextField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderSide:
-                            const BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        fillColor: const Color(0x8086BFF6),
-                        filled: true,
-                        hintText: "Ali",
-                        hintStyle: TextStyle(color: Colors.black26,fontWeight: FontWeight.bold),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25),
-                            borderSide:
-                            const BorderSide(color: Colors.black26))),
+                  Container(
+                    width: 330,
+                    height: 48,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          fillColor: const Color(0x8086BFF6),
+                          suffixIcon: Icon(Icons.done,size: 18),
+                          filled: true,
+                          hintText: "last name",
+                          hintStyle: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              borderSide:
+                                  const BorderSide(color: Colors.black26))),
+                    ),
                   ),
                   SizedBox(
                     height: 25.h,
                   ),
-                  const Row(
-                    children: [
-                      Text(
-                        "phone number",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black87),
-                      )
-                    ],
-                  ),
-                  TextField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderSide:
-                            const BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        fillColor: const Color(0x8086BFF6),
-                        filled: true,
-                        hintText: "+201278653469",
-                        hintStyle: TextStyle(color: Colors.black26,fontWeight: FontWeight.bold),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25),
-                            borderSide:
-                            const BorderSide(color: Colors.black26))),
+                  Container(
+                    width: 330,
+                    height: 48,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          fillColor: const Color(0x8086BFF6),
+                          suffixIcon: Icon(Icons.done,size: 18),
+                          filled: true,
+                          hintText: "Country",
+                          hintStyle: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              borderSide:
+                                  const BorderSide(color: Colors.black26))),
+                    ),
                   ),
                   SizedBox(
                     height: 25.h,
                   ),
-                  const Row(
-                    children: [
-                      Text(
-                        "Email",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.black87),
-                      )
-                    ],
+                  Container(
+                    width: 330,
+                    height: 48,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          fillColor: const Color(0x8086BFF6),
+                          suffixIcon: Icon(Icons.done,size: 18),
+                          filled: true,
+                          hintText: "phone number",
+                          hintStyle: TextStyle(
+                              color: Colors.white, fontWeight: FontWeight.bold),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              borderSide:
+                                  const BorderSide(color: Colors.black26))),
+                    ),
                   ),
-                  TextField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                            borderSide:
-                            const BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        fillColor: const Color(0x8086BFF6),
-                        filled: true,
-                        hintText: "AhmedAli21@gmail.com",
-                        hintStyle: TextStyle(color: Colors.black26,fontWeight: FontWeight.bold),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: BorderSide(color: Colors.transparent),
-                            borderRadius: BorderRadius.circular(25)),
-                        focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(25),
-                            borderSide:
-                            const BorderSide(color: Colors.black26))),
+                  SizedBox(
+                    height: 25.h,
+                  ),
+                  Container(
+                    width: 330,
+                    height: 48,
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                              borderSide:
+                                  const BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          fillColor: const Color(0xFF8086BFF6),
+                          suffixIcon: Icon(Icons.done,size: 20),
+                          filled: true,
+                          hintText: "E-mail",
+                          hintStyle: TextStyle(
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15),
+                          enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.transparent),
+                              borderRadius: BorderRadius.circular(25)),
+                          focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(25),
+                              borderSide:
+                                  const BorderSide(color: Colors.black26))),
+                    ),
                   ),
                 ],
               ),

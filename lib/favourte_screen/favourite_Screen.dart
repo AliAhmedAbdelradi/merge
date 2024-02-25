@@ -68,7 +68,10 @@ class _favouriteScreenState extends State<FavouriteScreen> {
                      SizedBox(
                       height: 20.h,
                     ),
-                     Image(image: AssetImage("assets/images/Rectangle 1.png")),
+                     Container(
+                         decoration: BoxDecoration(shape: BoxShape.rectangle ),
+
+                         child: Image(image: AssetImage("assets/images/Rectangle 1.png"), )),
                     FavCateg(
                       "Jifton Island",
                       "is the first nature reserve in the Red Sea",
